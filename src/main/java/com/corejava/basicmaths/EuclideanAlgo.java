@@ -1,7 +1,7 @@
 // this algo will reduce the time complexity to find gcd of 2 numbers
 // it states gcd(a, b) = gcd(a-b, b) where a>b
-// we can skip few subtraction steps by perfoming modulo on max number by min number repeat this till any of the number becomes 0
-// ex: gcd(a, b) = gcd(a/b, b) ==> repeat this step till any of the element becomes 0
+// we can skip few subtraction steps by perfoming modulo on max number by min number repeat this till any of the number becomes 0 other element will be the gcd of 2 numbers
+// ex: gcd(a, b) = gcd(a/b, b) ==> repeat this step till any of the element becomes 0, other element will be the gcd of 2 numbers
 package com.corejava.basicmaths;
 
 import java.util.Scanner;
