@@ -1,25 +1,24 @@
 package com.corejava.Recursion;
 
+import java.util.Arrays;
+
 public class SwappingArray {
     static int temp;
     public static void main(String[] args) {
         int[] a = new int[]{1, 2, 4, 5};
         int i = 0;
-        int j = a.length -1;
-        swap(a, i, j);
+        swap(a, i, a.length);
     }
-    static void swap(int[] a, int  i, int j){
-        if(j <= i){
+    static void swap(int[] a, int  i, int n){
+        if(i>=a.length/2){
             System.out.println("reverse array is: ");
-            for(int x: a){
-                System.out.print(x + " ");
-            }
+            System.out.println(Arrays.toString(a));
             return;
         } else {
             temp = a[i];
-            a[i] = a[j];
-            a[j] = temp;
-           swap(a, i+1, j-1); 
+            a[i] = a[n-i-1];
+            a[n-i-1] = temp;
+           swap(a, i+1, n); 
         }
     }
 }
