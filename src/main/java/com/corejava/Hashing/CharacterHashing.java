@@ -14,7 +14,7 @@ public class CharacterHashing {
 
         // prefetching
         for(int i =0;i<s.length();i++){
-            hash[s.charAt(i) - 'a']++;
+            hash[s.charAt(i) - 'a']++;  // hash[i]++ if hash array's length is 256 i.e when string is mixture of characters
         }
         scan.nextLine();
         while(iterations > 0 ){
