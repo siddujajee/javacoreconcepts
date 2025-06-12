@@ -18,7 +18,7 @@ public class CharacterHashing {
         }
         scan.nextLine();
         while(iterations > 0 ){
-            System.out.println("enter the character of which you want to find the number of apparations");
+            System.out.println("enter the character of which you want to find the number of apparitions");
             char c = scan.nextLine().charAt(0);
             System.out.println(c + " appears " + hash[c-'a'] + " times.");
             iterations--;

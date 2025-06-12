@@ -1,8 +1,8 @@
 // in simple words if we explain hashing means prestoring/prefetching
 // ex: let's say you have an array and you are given a number and you are asked to return the number of times that number appeared in the array
 // in this case i will create an array with length equals to maximum element of the array + 1(so that out of bound exception doesn't occur)
-// i will store the count of apparation of each element in the appropriate index which will help me to fetch the number of apparations of the given number
-// below is just a example code complexity comes if you are given a multiple numbers and asked to print apparation of all those numbers
+// i will store the count of apparition of each element in the appropriate index which will help me to fetch the number of apparitions of the given number
+// below is just a example code complexity comes if you are given a multiple numbers and asked to print apparition of all those numbers
 // refer Hashing.java program in current directory
 package com.corejava.Hashing;
 
