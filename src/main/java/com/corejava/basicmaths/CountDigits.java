@@ -9,6 +9,9 @@ public class CountDigits {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
         int count = 0;
+        if(n<0){
+            n = n*-1;
+        }
         while(n>0){
             count++;
             n = n/10;
