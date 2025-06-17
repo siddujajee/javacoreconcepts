@@ -14,6 +14,7 @@ public class ReverseInteger {
             int ld = x%10;
             reverse = reverse*10 + ld; 
             x = x/10;
+            // if on reversing the integer it exceeds range of Integer object return 0
             if (reverse > Integer.MAX_VALUE || reverse < Integer.MIN_VALUE) {
                 return 0;
             }
