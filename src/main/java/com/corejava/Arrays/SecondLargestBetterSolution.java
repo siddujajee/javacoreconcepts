@@ -21,7 +21,7 @@ public class SecondLargestBetterSolution {
                 secondLargest = x;
             }
         }
-        System.out.println(secondLargest);
+        if(secondLargest == Integer.MIN_VALUE) System.out.println("-1"); else System.out.println(secondLargest);;
 
         
     }    
