@@ -7,9 +7,17 @@ package com.mulltithreading;
 class DemoClass {
   private static DemoClass instance;
 
+  private DemoClass() {
+    // empty private constructor to prevent the instance creation
+  }
+
   public static DemoClass getInstace() {
     if (instance == null) {
-      instance = new DemoClass();
+      synchronized (SingletonClass.class) {
+        if (instance == null) {
+          instance = new DemoClass();
+        }
+      }
     }
     return instance;
   }
