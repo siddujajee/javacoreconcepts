@@ -1,4 +1,7 @@
 // singleton class but non efficient
+// singleton class: A class which has only one instance in JVM
+// below code works until multithreading comes into picture
+// during multithreading, there will be a seperate instance for each thread
 package com.mulltithreading;
 
 class DemoClass {
