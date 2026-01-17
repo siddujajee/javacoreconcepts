@@ -14,7 +14,7 @@ class LongestConsecutiveSolution {
         j++;
       } else {
         count = 1;
-        i = j;
+        i++;
         j++;
       }
       longest = Integer.max(longest, count);
@@ -39,8 +39,8 @@ class LongestConsecutiveSolution {
 public class LongestConsecutiveElementsLength {
 
   public static void main(String[] args) {
-    // int[] a = { 100, 4, 200, 1, 3, 2 }; // test case 1
-    int[] a = { 0, 3, 7, 2, 5, 8, 4, 6, 0, 1 }; // test case 2
+    int[] a = { 100, 4, 200, 1, 3, 2 }; // test case 1
+    // int[] a = { 0, 3, 7, 2, 5, 8, 4, 6, 0, 1 }; // test case 2
     LongestConsecutiveSolution solution = new LongestConsecutiveSolution();
     int length = solution.longestConsecutive(a);
     System.out.println(length);
