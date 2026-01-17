@@ -13,6 +13,13 @@
 // Explanation:
 // The next permutation of [1,2,3] is [1,3,2].
 
+// Algorithm:
+// step 1: find the longest matching prefix by finding the breakpoint
+// special case: if no breakpoint found, reverse the array and return, since array will be the last permutation and we have to rotate the set of permutations to the first permutation
+// step 2: replace the element before breakpoint with smallest element after the breakpoint (reverse traverse)
+// step 3: reverse the elements after the breakpoint
+// step 4: return the modified array
+
 package com.corejava.Arrays;
 
 class NextPermutationSolution {
