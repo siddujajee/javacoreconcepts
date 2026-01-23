@@ -1,3 +1,4 @@
+// this is better solution to print a specific row of pascals triangle
 package com.corejava.Arrays;
 
 public class PrintRowOfPascalsTriangle {
