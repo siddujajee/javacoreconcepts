@@ -1,3 +1,4 @@
+// this is a brute force solution to print pascals triangle
 package com.corejava.Arrays;
 
 public class PrintPascalsTriangle {
