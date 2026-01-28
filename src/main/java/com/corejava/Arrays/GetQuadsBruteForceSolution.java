@@ -11,19 +11,20 @@ import java.util.List;
 public class GetQuadsBruteForceSolution {
     public static void main(String[] args) {
         // int[] nums = { 7, -7, 1, 2, 14, 3 }; // testcase 1
-        int[] nums = { 2, -2, 0, 3, -3, 5 }; // testcase 2
-        List<List<Integer>> list = getQuads(nums);
+        int[] nums = { 1, -2, 3, 5, 7, 9 }; // testcase 2
+        int target = 7;
+        List<List<Integer>> list = getQuads(nums, target);
         System.out.println(list);
     }
 
-    static List<List<Integer>> getQuads(int[] nums) {
+    static List<List<Integer>> getQuads(int[] nums, int target) {
         List<List<Integer>> result = new ArrayList<List<Integer>>();
         for (int i = 0; i < nums.length; i++) {
             for (int j = i + 1; j < nums.length; j++) {
                 for (int k = j + 1; k < nums.length; k++) {
                     for (int l = k + 1; l < nums.length; l++) {
                         int sum = nums[i] + nums[j] + nums[k] + nums[l];
-                        if (sum == k) {
+                        if (sum == target) {
                             List<Integer> tempList = new ArrayList<Integer>();
                             tempList.add(nums[i]);
                             tempList.add(nums[j]);
