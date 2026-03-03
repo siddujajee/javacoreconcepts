@@ -14,7 +14,7 @@ public class CountInversionsOptimalSolution {
                 al.add(nums[left]);
                 left++;
             } else {
-                count += (mid + 1 - left);
+                count += (mid - left + 1); // Count the inversions
                 al.add(nums[right]);
                 right++;
             }
