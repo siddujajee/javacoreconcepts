@@ -8,7 +8,7 @@ public class CountInversionsOptimalSolution {
     public static void merge(int[] nums, int low, int mid, int high) {
         int left = low;
         int right = mid + 1;
-        ArrayList al = new ArrayList<>();
+        ArrayList<Integer> al = new ArrayList<Integer>();
         while (left <= mid && right <= high) {
             if (nums[left] <= nums[right]) {
                 al.add(nums[left]);
