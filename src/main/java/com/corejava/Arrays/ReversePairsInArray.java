@@ -1,3 +1,7 @@
+// Given an integer array nums. Return the number of reverse pairs in the array.
+// An index pair (i, j) is called a reverse pair if:
+// 0 <= i < j < nums.length
+// nums[i] > 2 * nums[j]
 package com.corejava.Arrays;
 
 import java.util.ArrayList;
