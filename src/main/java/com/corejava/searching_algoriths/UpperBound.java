@@ -16,15 +16,17 @@ class UpperBound {
             } else if (nums[mid] > x) {
                 return mid;
             } else {
-                end = mid - 1;
+                start = mid + 1;
             }
         }
         return result;
     }
 
     public static void main(String[] args) {
-        int[] nums = { 1, 2, 2, 3 };
-        int x = 2;
+        // int[] nums = { 1, 2, 2, 3 };
+        // int x = 2;
+        int[] nums = { 3, 5, 8, 15, 19 };
+        int x = 9;
         System.out.println(UpperBound.upperBound(nums, x));
     }
 }
