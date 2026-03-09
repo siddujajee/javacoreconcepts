@@ -1,6 +1,7 @@
 package com.corejava.Arrays;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
 
 public class TripletsOfArrayBetterSolution {
@@ -16,6 +17,7 @@ public class TripletsOfArrayBetterSolution {
                     tempList.add(nums[i]);
                     tempList.add(nums[j]);
                     tempList.add(thirdElement);
+                    Collections.sort(tempList);
                     resultSet.add(tempList);
                 }
                 tempSet.add(nums[j]);
