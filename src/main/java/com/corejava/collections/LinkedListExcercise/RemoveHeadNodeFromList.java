@@ -1,6 +1,6 @@
 package com.corejava.collections.LinkedListExcercise;
 
-public class RemoveNodeFromList {
+public class RemoveHeadNodeFromList {
     public static void main(String[] args) {
         int[] a = { 10, 50, 40, 60 };
         ListNode head = InitialiseSingleLinkedList.getList(a);
