@@ -13,10 +13,10 @@ public class InsertNodeAtTail {
         DisplayLinkedList.display(head);
     }
 
-    public static ListNode insertNode(ListNode head, int x){
+    public static ListNode insertNode(ListNode head, int x) {
         ListNode eleNode = new ListNode(x);
         ListNode currentNode = head;
-        while(currentNode.next != null){
+        while (currentNode.next != null) {
             currentNode = currentNode.next;
         }
         currentNode.next = eleNode;
