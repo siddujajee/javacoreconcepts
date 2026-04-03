@@ -13,6 +13,7 @@ public class InsertNodeAtTail {
         DisplayLinkedList.display(head);
     }
 
+    // core logic
     public static ListNode insertNode(ListNode head, int x) {
         ListNode eleNode = new ListNode(x);
         ListNode currentNode = head;
