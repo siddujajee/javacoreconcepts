@@ -2,6 +2,8 @@ package com.corejava.collections.LinkedListExcercise;
 
 public class InitialiseSingleLinkedList {
     public static ListNode getList(int[] a) {
+        if (a.length == 0)
+            return null;
         ListNode head = new ListNode(a[0]);
         ListNode currentNode = head;
         for (int i = 1; i < a.length; i++) {
