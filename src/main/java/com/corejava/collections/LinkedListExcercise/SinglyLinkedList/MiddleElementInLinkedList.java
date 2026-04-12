@@ -1,3 +1,6 @@
+// leetcode: https://leetcode.com/problems/middle-of-the-linked-list/?envType=problem-list-v2&envId=linked-list
+// point to be noted here is, if there are 2 middle elements return 2nd mid element. that's what last conditional statement is for
+// referring to line: 25
 package com.corejava.collections.LinkedListExcercise.SinglyLinkedList;
 
 import com.corejava.collections.LinkedListExcercise.InitialiseSingleLinkedList;
