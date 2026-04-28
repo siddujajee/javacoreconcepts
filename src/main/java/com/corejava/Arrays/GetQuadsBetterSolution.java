@@ -7,8 +7,10 @@ public class GetQuadsBetterSolution {
     // int[] nums = { 7, -7, 1, 2, 14, 3 }; // testcase 1
     // int[] nums = { 1, -2, 3, 5, 7, 9 }; // testcase 2
     // int target = 7;
-    int[] nums = { -5, 5, 4, -3, 0, 0, 4, -2 };
-    int target = 4;
+    // int[] nums = { -5, 5, 4, -3, 0, 0, 4, -2 };
+    // int target = 4;
+    int[] nums = { 1000000000, 1000000000, 1000000000, 1000000000 };
+    int target = -294967296;
     List<List<Integer>> list = getQuads(nums, target);
     System.out.println(list);
   }

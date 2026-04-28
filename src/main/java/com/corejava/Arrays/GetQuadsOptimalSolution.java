@@ -1,20 +1,28 @@
 package com.corejava.Arrays;
 
 import java.util.*;
-import java.util.List;
 
 public class GetQuadsOptimalSolution {
   public static void main(String[] args) {
     // int[] nums = { 7, -7, 1, 2, 14, 3 }; // testcase 1
     // int[] nums = { 1, -2, 3, 5, 7, 9 }; // testcase 2
-    int[] nums = { 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5 };
-    int target = 7;
+    // int[] nums = { 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5 };
+    // int[] nums = { 2, 2, 2, 2 };
+    // int target = 8;
+    // int[] nums = { 0, 0, 0, 0 };
+    // int target = 0;
+    // int[] nums = { -2, -1, -1, 1, 1, 2, 2 };
+    // int target = 0;
+
+    int[] nums = { 3, 1, 4, 2, -2, -1 };
+    int target = 2;
     List<List<Integer>> list = getQuads(nums, target);
     System.out.println(list);
   }
 
   static List<List<Integer>> getQuads(int[] nums, int target) {
     List<List<Integer>> result = new ArrayList<List<Integer>>();
+    HashSet<List<Integer>> resultSet = new HashSet<List<Integer>>();
     Arrays.sort(nums);
     for (int i = 0; i < nums.length; i++) {
       if (i > 0 && nums[i] == nums[i - 1]) {
@@ -26,7 +34,7 @@ public class GetQuadsOptimalSolution {
         }
         int k = j + 1;
         int l = nums.length - 1;
-        while (k < l) {
+        while (k <= l) {
           int sum = nums[i] + nums[j] + nums[k] + nums[l];
           if (sum > target) {
             l--;
@@ -38,18 +46,21 @@ public class GetQuadsOptimalSolution {
             tempList.add(nums[j]);
             tempList.add(nums[k]);
             tempList.add(nums[l]);
-            result.add(tempList);
+            resultSet.add(tempList);
             k++;
             l--;
-            while (nums[l] == nums[l + 1]) {
+            while (l > 0 && nums[l] == target) {
               l--;
             }
-            while (nums[k] == nums[k - 1]) {
+            while (k < nums.length && nums[k] == target) {
               k++;
             }
           }
         }
       }
+    }
+    for (List<Integer> quad : resultSet) {
+      result.add(quad);
     }
     return result;
   }
