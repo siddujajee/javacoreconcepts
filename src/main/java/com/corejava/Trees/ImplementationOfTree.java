@@ -7,13 +7,13 @@
 package com.corejava.Trees;
 
 public class ImplementationOfTree {
-    public static void main(String[] args) {
+    public static Node buildTree() {
         // Build a complete binary tree with 1 as root:
         //    1
         //  /   \
-        //  2    3
-        // / \   / \
-        // 4  5  6  7
+        //  2     3
+        // / \    / \
+        // 4  5   6  7
 
         Node node1 = new Node(1);
         Node node2 = new Node(2);
@@ -30,7 +30,6 @@ public class ImplementationOfTree {
         node3.left = node6;
         node3.right = node7;
 
-        // Now node1 is the root of the tree
-        // You can use node1 to traverse the tree
+        return node1;
     }
 }
