@@ -32,4 +32,14 @@ public class ImplementationOfTree {
 
         return node1;
     }
+
+    public static TreeNode createNonBalancedTree() {
+        // Create a right-skewed binary tree (non-balanced)
+        TreeNode root = new TreeNode(1);
+        root.right = new TreeNode(2);
+        root.right.right = new TreeNode(3);
+        root.right.right.right = new TreeNode(4);
+        root.right.right.right.right = new TreeNode(5);
+        return root;
+    }
 }
