@@ -11,6 +11,7 @@ public class DecimalToBinary {
         int num = scan.nextInt();
 
         System.out.println("binary representation of " + num + " is " + convert(num));
+        scan.close();
     }
 
     public static StringBuilder convert(int num) {
