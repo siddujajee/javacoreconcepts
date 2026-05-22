@@ -36,8 +36,8 @@ public class ShoppingCart {
     public static void main(String[] args) {
         ShoppingCart s = new ShoppingCart();
         s.addToCart(new Product("fan", 2000));
-        s.addToCart(new Product("dildo", 300));
-        s.addToCart(new Product("lube", 500));
+        s.addToCart(new Product("nivea face wash", 300));
+        s.addToCart(new Product("nivea body wash", 500));
 
         s.totalAmount();
         s.printInvoice();
