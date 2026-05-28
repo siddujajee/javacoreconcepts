@@ -11,12 +11,6 @@ public class RepresentaitonOfGraph {
         int m = scan.nextInt(); // edges
         int[][] graph = new int[n + 1][n + 1];
 
-        for (int i = 0; i <= n; i++) {
-            for (int j = 0; j <= n; j++) {
-                System.out.print(graph[i][j]);
-            }
-            System.out.println();
-        }
         for (int i = 0; i < m; i++) {
             System.out.println("enter the starting node between 0 to " + n);
             int startNode = scan.nextInt();
