@@ -1,3 +1,4 @@
+//  if graph is weighted graph to represent graph just mark the matrix cells with their respective weigts instead of 1
 package com.corejava.Graphs;
 
 import java.util.Scanner;
