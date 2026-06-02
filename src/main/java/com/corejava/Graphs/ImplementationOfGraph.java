@@ -3,6 +3,18 @@ package com.corejava.Graphs;
 import java.util.ArrayList;
 import java.util.List;
 
+// Graph for ImplementationOfGraph.java:
+// 1 - 2
+// 1 - 6
+// 2 - 3
+// 2 - 4
+// 4 - 5
+// 5 - 8
+// 1 - 6
+// 6 - 7
+// 6 - 9
+// 7 - 8
+// Exact edge order from connectNodes call sequence.
 public class ImplementationOfGraph {
     public static String graphType;
 
