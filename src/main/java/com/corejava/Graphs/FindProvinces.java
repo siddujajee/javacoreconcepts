@@ -17,7 +17,7 @@ public class FindProvinces {
     public static void performDfs(int[][] connectivity, int[] visited, int node) {
         visited[node] = 1;
         for (int i = 1; i < connectivity.length; i++) {
-            if (connectivity[node][i] == 1 && visited[i] != 1) {
+            if (connectivity[node][i] == 1 && visited[i] == 0) {
                 performDfs(connectivity, visited, i);
             }
         }
